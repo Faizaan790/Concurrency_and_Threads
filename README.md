@@ -1,10 +1,11 @@
-# Concurrency_and_Threads
-This is an application that instantiates a 20x20 two-dimensional array of integers, populates it
-with random integers drawn from the range of 1 to 100, and then outputs the index of the row
-with the highest sum among all the rows. 
+# Concurrency and Threads
 
-To summarize, my application will:
+This application generates a 20x20 two-dimensional array of integers, populates it with random integers ranging from 1 to 100, and then identifies the index of the row with the highest sum among all the rows.
 
-**A.) Generate the two-dimensional array of random integers.<br>
-B.) Start 20 concurrent threads, each of which places the sum of one row of the twodimensional array into the corresponding slot of a one-dimensional array.<br>
-C.) Output the index of the row with the maximum value.**
+## Features
+
+- **Generate Array:** The program creates a 20x20 two-dimensional array filled with random integers in the range of 1 to 100.
+
+- **Concurrent Processing:** It employs concurrent threading to enhance performance. Each of the 20 threads calculates the sum of a single row and stores it in a corresponding slot of a one-dimensional array.
+
+- **Find Maximum Sum Row:** The application then determines the index of the row with the maximum sum using the data obtained from the concurrent threads.
